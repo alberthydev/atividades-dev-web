@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #d90429;
+}
+
+span {
+  background-color: #8d99ae;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 200px;
+  height: 40vh;
+  background: url(https://external-preview.redd.it/7-5u9RM_Z0m6EwZx90nyTrF2zc0_AUHuQUqdyDsLkJU.jpg?auto=webp&s=82a2ba7c3a73aa01419cf3318611c939ab799050) center no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 7px 7px 0 #000;
+  color: white;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.descrip-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  padding: 50px;
+  background-color: #ef233c;
+  border-radius: 5px;
+  color: #edf2f4;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.card {
+  border-radius: 5px;
+  color: #edf2f4;
+  font-size: 1.5rem;
+  width: 30%;
+  text-align: center;
+  padding: 50px;
+  background-color: #ef233c;
+  border: 1px solid #d90429;
+}
+
+@media (max-width: 1024px) {
+  .descrip-container {
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .card {
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+
+  .descrip-container {
+    font-size: 1.2rem;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
